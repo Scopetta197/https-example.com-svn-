@@ -1,27 +1,42 @@
 {
-  "//1": "describes your app and its dependencies",
-  "//2": "https://docs.npmjs.com/files/package.json",
-  "//3": "updating this file will download and update your packages",
-  "name": "hello-express",
-  "version": "0.0.1",
-  "description": "A simple Node app built on Express, instantly up and running.",
+  "name": "tony",
+  "description": "The demo site for the official Chrome DevTools load performance tutorial.",
+  "version": "0.0.0",
   "main": "server.js",
+  "repository": {
+    "url": "https://glitch.com/edit/#!/tony"
+  },
+  "license": "apache-2.0",
   "scripts": {
-    "start": "node server.js"
+    "build": "webpack",
+    "start": "npm run build && npm run serve",
+    "serve": "nodemon server.js"
   },
   "dependencies": {
-    "express": "^4.16.3"
+    "@material-ui/core": "^1.2.0",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-react": "^6.24.1",
+    "babel-runtime": "^6.26.0",
+    "compression": "^1.7.2",
+    "express": "^4.15.4",
+    "html-webpack-plugin": "^3.2.0",
+    "react": "^16.3.2",
+    "react-dom": "^16.4.0",
+    "react-router-dom": "^4.2.2",
+    "resize-img": "^1.1.2",
+    "webpack": "^4.11.0"
+  },
+  "devDependencies": {
+    "copy-webpack-plugin": "^4.5.1",
+    "file-loader": "^1.1.11",
+    "imagemin": "^5.3.1",
+    "imagemin-pngquant": "^5.1.0",
+    "img-loader": "^3.0.0",
+    "nodemon": "^1.17.5",
+    "webpack-cli": "^3.0.2"
   },
   "engines": {
     "node": "8.x"
-  },
-  "repository": {
-    "url": "https://glitch.com/edit/#!/hello-express"
-  },
-  "license": "MIT",
-  "keywords": [
-    "node",
-    "glitch",
-    "express"
-  ]
+  }
 }

@@ -1,22 +1,23 @@
-// server.js
-// where your node app starts
+const express = require('express');
+const app = express();
+const fs = require('fs')
+const resize = require('resize-img');
 
-// init project
-var express = require('express');
-var app = express();
+app.use(express.static('build'));
 
-// we've started you off with Express, 
-// but feel free to use whatever libs or frameworks you'd like through `package.json`.
-
-// http://expressjs.com/en/starter/static-files.html
-app.use(express.static('public'));
-
-// http://expressjs.com/en/starter/basic-routing.html
-app.get("/", function (request, response) {
-  response.sendFile(__dirname + '/views/index.html');
+app.get('/author', (req, res) => {
+  setTimeout(() => {
+    res.send('Built with 🐟 by Tony the 🐈');
+  }, 1000);
 });
 
-// listen for requests :)
-var listener = app.listen(process.env.PORT, function () {
-  console.log('Your app is listening on port ' + listener.address().port);
+app.get('/imgs/:img', async (req, res) => {
+  const img = fs.readFileSync(`${__dirname}/imgs/${req.params.img}`);
+  const resized = await resize(img, { width: parseInt(req.query.width) });
+  res.write(resized);
+  res.end();
+});
+
+const listener = app.listen(process.env.PORT || 1234, function () {
+  console.log(`Listening on port ${listener.address().port}`);
 });
