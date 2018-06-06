@@ -3,6 +3,18 @@ const width = 1500;
 
 const model = [
   {
+    name: 'Fesh',
+    image: `${base}/fesh.jpg?width=${width}`, // https://www.pexels.com/photo/fish-seafood-market-sea-85528/
+    body: 'Slippry salt frens',
+    route: 'fesh',
+    pros: [
+      'Salty'
+    ],
+    cons: [
+      'Tough to hold'
+    ]
+  },
+  {
     name: 'Brrto',
     image: `${base}/brrto.jpg?width=${width}`, // https://www.pexels.com/photo/burrito-chicken-delicious-dinner-461198/
     body: 'Portable noms',
@@ -24,18 +36,6 @@ const model = [
     ],
     cons: [
       'Too much hot'
-    ]
-  },
-  {
-    name: 'Fesh',
-    image: `${base}/fesh.jpg?width=${width}`, // https://www.pexels.com/photo/fish-seafood-market-sea-85528/
-    body: 'Slippry salt frens',
-    route: 'fesh',
-    pros: [
-      'Salty'
-    ],
-    cons: [
-      'Tough to hold'
     ]
   },
   {

@@ -1,10 +1,11 @@
 import React from 'react';
-import { Card as MaterialUICard } from '@material-ui/core/Card';
+import MaterialUICard from '@material-ui/core/Card';
 import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
-import withStyles from '@material-ui/core/styles';
+import Typography from '@material-ui/core/Typography';
+import { withStyles } from '@material-ui/core/styles';
 import { Link } from 'react-router-dom';
 
 const styles = theme => ({
@@ -20,7 +21,7 @@ const styles = theme => ({
   }
 });
 
-class Card extends React.Component {
+class MyCard extends React.Component {
   render() {
     return (
       <div className={this.props.classes.root}>
@@ -46,4 +47,4 @@ class Card extends React.Component {
   }
 }
 
-export default withStyles(styles)(Card);
+export default withStyles(styles)(MyCard);
