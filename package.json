@@ -1,16 +1,16 @@
 {
   "name": "tony",
   "description": "The demo site for the official Chrome DevTools load performance tutorial.",
-  "version": "0.0.1",
+  "version": "0.0.0",
   "main": "server.js",
   "repository": {
     "url": "https://glitch.com/edit/#!/tony"
   },
-  "license": "apache-2.0",
+  "license": "Apache-2.0",
   "scripts": {
     "build": "webpack",
-    "start": "npm run build && npm run serve",
-    "serve": "nodemon server.js"
+    "start": "npm run build && node server.js",
+    "develop": "npm run build && nodemon server.js"
   },
   "dependencies": {
     "@material-ui/core": "^1.2.0",
@@ -23,15 +23,13 @@
     "html-webpack-plugin": "^3.2.0",
     "react": "^16.3.2",
     "react-dom": "^16.4.0",
-    "react-router-dom": "^4.2.2",
+    "react-router-dom": "^4.3.1",
     "resize-img": "^1.1.2",
-    "webpack": "^4.11.0"
+    "webpack": "^4.11.1"
   },
   "devDependencies": {
     "copy-webpack-plugin": "^4.5.1",
     "file-loader": "^1.1.11",
-    "imagemin": "^5.3.1",
-    "imagemin-pngquant": "^5.1.0",
     "img-loader": "^3.0.0",
     "nodemon": "^1.17.5",
     "webpack-cli": "^3.0.2"
