@@ -12,10 +12,11 @@ app.get('/author', (req, res) => {
 });
 
 app.get('/imgs/:img', async (req, res) => {
-  const img = fs.readFileSync(`${__dirname}/imgs/${req.params.img}`);
-  const resized = await resize(img, { width: parseInt(req.query.width) });
-  res.write(resized);
-  res.end();
+  const img = fs.readFile(`${__dirname}/imgs/${req.params.img}`, (err,data) => {
+    resize(data, { width: parseInt(req.query.width) });
+    res.write(resized);
+    res.end();
+  });
 });
 
 const listener = app.listen(process.env.PORT || 1234, function () {
