@@ -11,11 +11,14 @@ app.get('/author', (req, res) => {
   }, 1000);
 });
 
-app.get('/imgs/:img', async (req, res) => {
-  const img = fs.readFile(`${__dirname}/imgs/${req.params.img}`, (err,data) => {
-    resize(data, { width: parseInt(req.query.width) });
-    res.write(resized);
-    res.end();
+app.get('/imgs/:img', (req, res) => {
+  fs.readFile(`${__dirname}/imgs/${req.params.img}`, (err, data) => {
+    resize(data, { 
+      width: parseInt(req.query.width) 
+    }).then(buf => {
+      res.write(buf);
+      res.end();
+    });
   });
 });
 
