@@ -1,5 +1,9 @@
 import React from 'react';
-import { Drawer as MaterialUIDrawer, List, ListItem, ListItemText, withStyles } from '@material-ui/core';
+import Drawer as MaterialUIDrawer from '@material-ui/core/Drawer';
+import List from '@material-ui/core/List';
+import ListItem from '@material-ui/core/ListItem';
+import ListItemText from '@material-ui/core/ListItemText';
+import withStyles from '@material-ui/core/styles';
 import { Link } from 'react-router-dom';
 
 const styles = {};

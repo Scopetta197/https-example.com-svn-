@@ -1,5 +1,8 @@
 import React from 'react';
-import { Button, Typography, MuiThemeProvider, createMuiTheme } from '@material-ui/core';
+import Button from '@material-ui/core/Button';
+import Typography from '@material-ui/core/Typography';
+import MuiThemeProvider from '@material-ui/core/styles';
+import createMuiTheme from '@material-ui/core/styles';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import Header from './Header.jsx';
 import Pages from './Pages.jsx';
