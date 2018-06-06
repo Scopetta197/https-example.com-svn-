@@ -1,7 +1,7 @@
 {
   "name": "tony",
   "description": "The demo site for the official Chrome DevTools load performance tutorial.",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "main": "server.js",
   "repository": {
     "url": "https://glitch.com/edit/#!/tony"
