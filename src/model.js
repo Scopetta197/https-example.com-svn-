@@ -5,13 +5,15 @@ const model = [
   {
     name: 'Fesh',
     image: `${base}/fesh.jpg?width=${width}`, // https://www.pexels.com/photo/fish-seafood-market-sea-85528/
-    body: 'Slippry salt frens',
+    body: 'Slippry salty goodness',
     route: 'fesh',
     pros: [
-      'Salty'
+      'Salty',
+      'Shiny'
     ],
     cons: [
-      'Tough to hold'
+      'Tough to hold',
+      'Sometimes runs away'
     ]
   },
   {
@@ -20,10 +22,12 @@ const model = [
     body: 'Portable noms',
     route: 'brrto',
     pros: [
-      'Many flavor'
+      'Many flavor',
+      'Travels well'
     ],
     cons: [
-      'Often wrapped in scary shiny metal'
+      'Often wrapped in scary shiny metal',
+      'Heavy'
     ]
   },
   {
@@ -32,22 +36,26 @@ const model = [
     body: 'Gooey hotness',
     route: 'pezza',
     pros: [
-      'Chees'
+      'Maximum chees',
+      'Still good after many days'
     ],
     cons: [
-      'Too much hot'
+      'Too much hot',
+      'Hard to lick'
     ]
   },
   {
     name: 'Soop',
     image: `${base}/soop.jpg?width=${width}`, // https://www.pexels.com/photo/appetizer-bowl-bread-breakfast-539451/
-    body: 'Warm tummy',
+    body: 'Cozy warm',
     route: 'soop',
     pros: [
-      'Smooth on tongue'
+      'Smooth on tongue',
+      'Pretty'
     ],
     cons: [
-      'Cannot put in pockets'
+      'Cannot put in pockets',
+      'Makes your face messy'
     ]
   }
 ];
