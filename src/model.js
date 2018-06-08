@@ -1,11 +1,18 @@
 const base = '/imgs';
 const width = 1500;
+const dir = 'big';
+
+// All images are public domain.
+// https://www.pexels.com/photo/fish-seafood-market-sea-85528/
+// https://www.pexels.com/photo/burrito-chicken-delicious-dinner-461198/
+// https://www.pexels.com/photo/vegetables-italian-pizza-restaurant-2232/
+// https://www.pexels.com/photo/appetizer-bowl-bread-breakfast-539451/
 
 const model = [
   {
     name: 'Fesh',
-    image: `${base}/fesh.jpg?width=${width}`, // https://www.pexels.com/photo/fish-seafood-market-sea-85528/
-    body: 'Slippry salty goodness',
+    image: `https://storage.googleapis.com/webfundamentals-assets/tools/chrome-devtools/load-performance/${dir}/fesh.jpg`,
+    body: 'Salty goodness',
     route: 'fesh',
     pros: [
       'Salty',
@@ -18,7 +25,7 @@ const model = [
   },
   {
     name: 'Brrto',
-    image: `${base}/brrto.jpg?width=${width}`, // https://www.pexels.com/photo/burrito-chicken-delicious-dinner-461198/
+    image: `https://storage.googleapis.com/webfundamentals-assets/tools/chrome-devtools/load-performance/${dir}/brrto.jpg`,
     body: 'Portable noms',
     route: 'brrto',
     pros: [
@@ -32,7 +39,7 @@ const model = [
   },
   {
     name: 'Pezza',
-    image: `${base}/pezza.jpg?width=${width}`, // https://www.pexels.com/photo/vegetables-italian-pizza-restaurant-2232/
+    image: `https://storage.googleapis.com/webfundamentals-assets/tools/chrome-devtools/load-performance/${dir}/pezza.jpg`,
     body: 'Gooey hotness',
     route: 'pezza',
     pros: [
@@ -46,7 +53,7 @@ const model = [
   },
   {
     name: 'Soop',
-    image: `${base}/soop.jpg?width=${width}`, // https://www.pexels.com/photo/appetizer-bowl-bread-breakfast-539451/
+    image: `https://storage.googleapis.com/webfundamentals-assets/tools/chrome-devtools/load-performance/${dir}/soop.jpg`,
     body: 'Cozy warm',
     route: 'soop',
     pros: [

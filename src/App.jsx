@@ -27,6 +27,7 @@ const theme = createMuiTheme({
 
 class App extends React.Component {
   constructor(props) {
+    super(props);
     let author = undefined;
     function getAuthor() {
       const xhr = new XMLHttpRequest();
@@ -38,7 +39,6 @@ class App extends React.Component {
       xhr.open('GET', '/author', false);
       xhr.send();
     }
-    super(props);
     getAuthor();
     this.state = { author: author };
   }
