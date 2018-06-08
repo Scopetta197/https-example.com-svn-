@@ -28,19 +28,7 @@ const theme = createMuiTheme({
 class App extends React.Component {
   constructor(props) {
     super(props);
-    let author = undefined;
-    function getAuthor() {
-      const xhr = new XMLHttpRequest();
-      xhr.onreadystatechange = () => {
-        if (xhr.readyState == XMLHttpRequest.DONE) {
-          author = xhr.responseText;
-        }
-      };
-      xhr.open('GET', '/author', false);
-      xhr.send();
-    }
-    getAuthor();
-    this.state = { author: author };
+    this.state = { author: 'Built with fish by Tony the cat' };
   }
   render() {
     return (

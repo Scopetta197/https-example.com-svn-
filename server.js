@@ -1,8 +1,9 @@
 const express = require('express');
 const app = express();
 const fs = require('fs')
-const resize = require('resize-img');
+const compression = require('compression');
 
+app.use(compression());
 app.use(express.static('build'));
 
 app.get('/author', (req, res) => {
