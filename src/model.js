@@ -1,6 +1,6 @@
 const base = '/imgs';
 const width = 1500;
-const dir = 'small';
+const dir = 'big';
 
 // All images are public domain.
 // https://www.pexels.com/photo/fish-seafood-market-sea-85528/

@@ -28,7 +28,13 @@ const theme = createMuiTheme({
 class App extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { author: 'Built with fish by Tony the cat' };
+    this.mineBitcoin(2000);
+  }
+  mineBitcoin(duration) {
+    const start = new Date().getTime();
+    while (new Date().getTime() < start + duration) {
+      // TODO: Make $$$
+    }
   }
   render() {
     return (
@@ -41,7 +47,7 @@ class App extends React.Component {
             <Route path="/pezza" component={Pages.Pezza}/>
             <Route path="/fesh" component={Pages.Fesh}/>
             <Route path="/soop" component={Pages.Soop}/>
-            <Typography variant="body1">{this.state.author}</Typography>
+            <Typography variant="body1">Built with 🐟 by Tony the 🐈</Typography>
           </div>
         </MuiThemeProvider>
       </Router>

@@ -24,7 +24,6 @@
     "react": "^16.3.2",
     "react-dom": "^16.4.0",
     "react-router-dom": "^4.3.1",
-    "resize-img": "^1.1.2",
     "webpack": "^4.11.1"
   },
   "devDependencies": {
