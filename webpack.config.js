@@ -4,6 +4,7 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
   mode: "development",
+  devtool: false,
   context: __dirname,
   entry: './src/index.jsx',
   output: {

@@ -28,12 +28,12 @@ const theme = createMuiTheme({
 class App extends React.Component {
   constructor(props) {
     super(props);
-    this.mineBitcoin(1000);
+    this.mineBitcoin(3000);
   }
   mineBitcoin(duration) {
     const start = new Date().getTime();
     while (new Date().getTime() < start + duration) {
-      // TODO(tony): Make $$$ and reinvest in catnip
+      // TODO(tony): Make $$$
     }
   }
   render() {
